@@ -109,8 +109,24 @@
 <p>接下来，在github上新建一个仓库，注意仓库名必须为用户名.github.io</p>
 <p>回到本地blog目录下，在命令行工具中输入npm install hexo-deployer-git</p>
 <p>修改目录下的_config.yml文件，将最后几行修改为：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">&#x27;git&#x27;</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">&#x27;https://github.com/magicegg523/magicegg523.github.io.git&#x27;</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">&#x27;main&#x27;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">&#x27;git&#x27;</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">&#x27;https://github.com/magicegg523/magicegg523.github.io.git&#x27;</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">&#x27;main&#x27;</span></span><br></pre></td></tr></table></figure>
 
+
+
+<ul>
+<li><p>发布文章：</p>
+<p>hexo d</p>
+</li>
+</ul>
+<p>如果遇到无法验证的情况，可以将配置文件修改为ssh的连接方式：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">&#x27;git&#x27;</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">&#x27;git@github.com:magicegg523/magicegg523.github.io.git&#x27;</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">&#x27;main&#x27;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>如果看到如下提示说明推送成功：</p>
+<p>INFO  Deploy done: git</p>
+<p>这时可以通过域名访问blog:</p>
+<p><a target="_blank" rel="noopener" href="https://magicegg523.github.io/">Hexo (magicegg523.github.io)</a></p>
 
       
     </div>
